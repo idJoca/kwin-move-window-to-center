@@ -20,8 +20,8 @@ registerShortcut("MoveWindowToCenter", "Move Window to Center", "Meta+C", functi
         client.geometry = {
             x: maxArea.x + (maxArea.width - client.width) / 2,
             y: maxArea.y + (maxArea.height - client.height) / 2,
-            width: client.width,
-            height: client.height
+            width: maxArea.x * 0.5,
+            height: maxArea.y * 0.8
         };
     }
 });
